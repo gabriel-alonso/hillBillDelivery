@@ -1,0 +1,293 @@
+﻿
+@{
+    Layout = null;
+}
+
+<html>
+<head>
+    <title> Cadastro de Cliente</title>
+    <meta name="description" content="Aprenda a criar um site completo que usa formulários em HTML">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Tasty Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <!-- bootstrap-css -->
+    <link href="~/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+    <!--// bootstrap-css -->
+    <!-- css -->
+    <link rel="stylesheet" href="~/css/style.css" type="text/css" media="all" />
+    <!--// css -->
+    <!-- font-awesome icons -->
+    <link href="~/css/font-awesome.css" rel="stylesheet">
+    <!-- //font-awesome icons -->
+    <!-- font -->
+    <link href='//fonts.googleapis.com/css?family=Francois+One' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Cinzel+Decorative:400,700,900' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,700italic,700,400italic,300italic,300' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!-- //font -->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/SmoothScroll.min.js"></script>
+</head>
+<body>
+    <div class="bg-img">
+        <!-- banner -->
+        <div class="banner code-banner">
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <h1><a href="~/Home/index">HillBill</a></h1>
+                    </div>
+                    <div class="top-nav">
+                        <nav class="navbar navbar-default">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                                Menu
+                            </button>
+                            <!-- Collect the nav links, forms, and other content for toggling -->
+                            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="~/Home/index">Inicio</a></li>
+                                    <li><a href="~/About/about">Sobre</a></li>
+                                    <li><a href="~/Menu/menu">Menu</a></li>
+                                    <li><a href="~/Contact/contact">Contato</a></li>
+                                    <li><a class="active" href="~/Cadastro/Cadastrar">Cadastrar</a></li>
+                                    <div class="clearfix"> </div>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <br />
+    <div class="container">
+       <div class="about-heading">
+            <h2> Preencha o formulário abaixo para realizar o cadastramento</h2>
+        </div>
+        </div>
+        
+    <div class="container">
+        <div class="banner-info">
+            <h1> Seja um HillBill!</h1>
+
+            <br />
+            <form class="banner-info2" action="Script_do_Formulario.php" method="post">
+                <!-- DADOS PESSOAIS-->
+                <fieldset>
+                    <legend>Dados Pessoais</legend>
+                    <table cellspacing="10">
+                        <tr>
+                            <td>
+                                <label for="nome">Nome: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="email">
+                            </td>
+                            <td>
+                                <label for="sobrenome">Sobrenome: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="sobrenome">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>Nascimento: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="dia" size="2" maxlength="2" value="">
+                                <input type="text" name="mes" size="2" maxlength="2" value="">
+                                <input type="text" name="ano" size="4" maxlength="4" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="rg">RG: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="rg" size="13" maxlength="13">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label>CPF:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="cpf" size="9" maxlength="9"> - <input type="text" name="cpf2" size="2" maxlength="2">
+                            </td>
+
+
+                        <tr>
+                            <td>
+                                <label for="rg">Telefone: </label>
+                            </td>
+                            <td align="right">
+                                <input type="text" name="tel">
+                            </td>
+                        </tr>
+
+
+                    </table>
+                </fieldset>
+                <br />
+                <!-- ENDEREÇO -->
+                <fieldset>
+                    <legend>Dados de Endereço</legend>
+                    <table cellspacing="10">
+
+                        <tr>
+                            <td>
+                                <label for="rua">Rua:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="rua">
+                            </td>
+                            <td>
+                                <label for="numero">Numero:</label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="numero" size="4">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="bairro">Bairro: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="bairro">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="cidade">Cidade: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="cidade">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="cep">CEP: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="cep" size="5" maxlength="5"> - <input type="text" name="cep2" size="3" maxlength="3">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br />
+
+                <!-- DADOS DE LOGIN -->
+                <fieldset>
+                    <legend>Dados de login</legend>
+                    <table cellspacing="10">
+                        <tr>
+                            <td>
+                                <label for="email">E-mail: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="email">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="login">Login de usuário: </label>
+                            </td>
+                            <td align="left">
+                                <input type="text" name="login">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="pass">Senha: </label>
+                            </td>
+                            <td align="left">
+                                <input type="password" name="pass">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="passconfirm">Confirme a senha: </label>
+                            </td>
+                            <td align="left">
+                                <input type="password" name="passconfirm">
+                            </td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <br />
+                <input type="submit">
+                <input type="reset" value="Limpar">
+
+            </form>
+        </div>
+        </div>
+</body>
+
+<div class="clearfix"> </div>
+
+<!-- //news -->
+<!-- copyright -->
+<div class="copyright">
+    <div class="container">
+        <div class="w3agile-list">
+            <ul>
+                <li><a href="~/About/about">Sobre</a></li>
+                <li><a href="~/Menu/menu">Menu</a></li>
+                <li><a href="~/Contact/contact">Contato</a></li>
+                <li><a href="~/Cadastro/Cadastrar">Cadastrar</a></li>
+            </ul>
+        </div>
+
+        <!-- footer -->
+        <div class="footer">
+            <div class="container">
+                <div class="footer-grids">
+                    <div class="footer-heading">
+                        <h3>Contatos</h3>
+                        <div class="col-md-12 text-center">
+                            <div class="sidebar-inner-footer">
+                                <div class="widget widget-infomation">
+                                    <ul class="flat-information flat-footer">
+                                        <i class="fa fa-envelope" aria-hidden="true" class="email">  hillbill.contato@gmail.com</i>
+                                        <br></br>
+                                        <i class="fa fa-phone" aria-hidden="true" class="phone"> (19) 3358-2201  (19) 99854-8847 </i>
+
+
+                                    </ul>
+                                </div>
+                            </div><!-- /.sidebar-inner-footer -->
+                        </div>
+                    </div>
+                    <div class="footer-icons">
+                        <ul>
+                            <li><a href="#" class="twitter"><i class="fa fa-twitter"></i></a><span>Twitter</span></li>
+                            <li><a href="https://www.facebook.com/HillBill-260839494369375/" class="twitter facebook"><i class="fa fa-facebook"></i></a><span>Facebook</span></li>
+                            <li><a href="#" class="twitter chrome"><i class="fa fa-google-plus"></i></a><span>Google +</span></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+
+        <div class="agileinfo">
+            <p>© 2017 HillBill . All Rights Reserved . Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        </div>
+    </div>
+</div>
+<!-- //copyright -->
+</body>
+
+</html>
+
